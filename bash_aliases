@@ -18,6 +18,7 @@ alias gdc="git diff --cached"
 
 alias g-update-deleted="git ls-files -z --deleted | git update-index -z --remove --stdin"
 #alias gstt="git ls-files --exclude-per-directory=.gitignore --exclude-from=.git/info/exclude --others --modified -t"
+alias gfr="git fetch && git rebase refs/remotes/origin/master"
 
 alias gb="git branch"
 alias gba="git branch -a -v"
