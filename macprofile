@@ -1,0 +1,12 @@
+# mac-only settings.
+# Paths, manpaths, etc etc
+export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:$PATH
+export PATH=/usr/local/git/bin:$PATH
+export PATH=/usr/local/mysql/bin:$PATH
+
+export MANPATH=~/man:/usr/local/git/man:$MANPATH
+
+export VIM_APP_DIR=/Applications
+
+# have git-svn working with just port install git-core, without +svn
+export PERL5LIB=/usr/local/svn/perl:/usr/local/svn/perl/darwin-thread-multi-2level

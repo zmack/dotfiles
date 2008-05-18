@@ -3,6 +3,7 @@ export PATH=~/bin:$PATH
 export PATH=~/bin/zmack:$PATH
 
 . ~/.bash_aliases
+. ~/.macprofile
 
 # don't use gems as root
 #alias gemi='gem install --no-rdoc --no-ri -y'
