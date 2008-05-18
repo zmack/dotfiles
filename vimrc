@@ -96,6 +96,9 @@ endif
 if has("macunix")
   set antialias
 endif
+if has("unix")
+  set guifont=Monaco\ 10
+end
 colorscheme desert
 
 """""""""" windows, tab pages, buffers
@@ -154,6 +157,11 @@ call CHELU_spaces()
 "let g:Tb_MapCTabSwitchBufs = 1
 "let g:Tb_ModSelTarget = 1
 
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""" NERDCommenter
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let NERDMapleader = '<SPACE>'
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""" NERDTree settings
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

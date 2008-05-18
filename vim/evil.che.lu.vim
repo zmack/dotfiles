@@ -84,10 +84,6 @@ function! GuiEnter()
   if has("macunix")
     call GuiSizeSet(g:CURRENTSIZE)
   endif
-
-  if has("winaltkeys")
-    simalt ~x
-  endif
 endfunction
 
 function! BufEnter()
