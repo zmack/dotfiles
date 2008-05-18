@@ -4,20 +4,20 @@ export PATH=~/work/gems/braid/bin:$PATH
 export PATH=~/work/sdk/air/bin:$PATH
 export PATH=~/.gems/bin:$PATH
 export PATH=~/bin:$PATH
-export PATH=~/bin/chelu:$PATH
+export PATH=~/bin/zmack:$PATH
 export PATH=/usr/local/git/bin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
 
 export MANPATH=~/man:/usr/local/git/man:$MANPATH
 
-. ~/bin/aliases
+. ~/.bash_aliases
 
 # don't use gems as root
 #alias gemi='gem install --no-rdoc --no-ri -y'
 #alias gemi='gem install -y'
 
 export DISPLAY=:0.0
-export EDITOR=v
+export EDITOR=vim
 export PAGER=less
 export VIM_APP_DIR=/Applications
 export INPUTRC=~/.inputrc
