@@ -67,7 +67,7 @@ set iskeyword=@,48-57,128-167,224-235,_
 set listchars=tab:>.,trail:.,extends:>,precedes:<,eol:$
 
 """""""""" visual
-set guioptions=ceimMgrb       " aA BAD?
+set guioptions=ceimMgr        " aA BAD? WHY THE FUCK ARE YOU SETTING b !?! =[
 set number                    " show line numbers
 set laststatus=2              " always show status line
 set scrolloff=2               " minlines to show around cursor
