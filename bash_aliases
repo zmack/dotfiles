@@ -1,13 +1,6 @@
-# common
-alias vi="v"
-alias gvim="g"
-alias c="clear"
-alias ls="ls -G"
-alias l="ls -al"
-
 # bash
 alias reload="source ~/.profile"
-alias rc='v ~/.profile && source ~/.profile'
+alias rc='vim ~/.profile && source ~/.profile'
 
 # git svn
 alias gs="git svn"
