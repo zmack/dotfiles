@@ -199,7 +199,8 @@ autocmd VimLeavePre           * call VimLeave()
 autocmd! BufRead,BufNewFile *.haml         setfiletype haml
 autocmd! BufRead,BufNewFile *.sass         setfiletype sass
 autocmd! BufRead,BufNewFile *.as           set filetype=javascript 
-autocmd! BufRead,BufNewFile COMMIT_EDITMSG setfiletype gitcommit
+autocmd! BufRead,BufNewFile COMMIT_EDITMSG set filetype=gitcommit
+autocmd! BufRead,BufNewFile COMMIT_EDITMSG set syntax=diff
 
 """""""""" match tags in xml like docs
 " needed? maybe already from matchit.vim?
