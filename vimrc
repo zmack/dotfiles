@@ -239,14 +239,15 @@ let g:template{'_'}{'lorem'}  = g:template{'_'}{'lorem0'}
 let g:template{'vim'}{'fun'} = "function! ()\<CR>endfunction\<Up>\<End>\<Left>\<Left>"
 
 " rails - erb
-let g:template{'_'}{'rr'}  = "<%  -%>\<Left>\<Left>\<Left>\<Left>"
-let g:template{'_'}{'re'}  = "<%=  -%>\<Left>\<Left>\<Left>\<Left>"
-let g:template{'_'}{'rrr'} = "<%  %>\<Left>\<Left>\<Left>"
-let g:template{'_'}{'rre'} = "<%=  %>\<Left>\<Left>\<Left>"
-let g:template{'_'}{'cc'} = "/*  */\<Left>\<Left>\<Left>"
-let g:template{'_'}{'hh'} = "<!--  -->\<Left>\<Left>\<Left>\<Left>"
-let g:template{'_'}{'le'} = "{{  }}\<Left>\<Left>\<Left>"
-let g:template{'_'}{'ll'} = "{%  %}\<Left>\<Left>\<Left>"
+" fuck erb
+"let g:template{'_'}{'rr'}  = "<%  -%>\<Left>\<Left>\<Left>\<Left>"
+"let g:template{'_'}{'re'}  = "<%=  -%>\<Left>\<Left>\<Left>\<Left>"
+"let g:template{'_'}{'rrr'} = "<%  %>\<Left>\<Left>\<Left>"
+"let g:template{'_'}{'rre'} = "<%=  %>\<Left>\<Left>\<Left>"
+"let g:template{'_'}{'cc'} = "/*  */\<Left>\<Left>\<Left>"
+"let g:template{'_'}{'hh'} = "<!--  -->\<Left>\<Left>\<Left>\<Left>"
+"let g:template{'_'}{'le'} = "{{  }}\<Left>\<Left>\<Left>"
+"let g:template{'_'}{'ll'} = "{%  %}\<Left>\<Left>\<Left>"
 
 " rails rspec
 let g:template{'ruby'}{'rde'} = "describe \"\" do\n  \n\<BS>end\n\<Up>\<Up>\<Up>" . repeat("\<RIGHT>", 10)
@@ -356,8 +357,8 @@ map <S-Insert> "+gP
 exe 'inoremap <script> <C-V>' paste#paste_cmd['i']
 exe 'vnoremap <script> <C-V>' paste#paste_cmd['v']
 
-imap <S-Insert>		<C-V>
-vmap <S-Insert>		<C-V>
+"imap <S-Insert>		<C-V>
+"vmap <S-Insert>		<C-V>
 
 " Use CTRL-Q to do what CTRL-V used to do
 noremap <C-Q>		<C-V>
