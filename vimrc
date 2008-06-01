@@ -97,7 +97,7 @@ if has("macunix")
   set antialias
 endif
 if has("unix")
-  set guifont=Monaco\ 10
+  set guifont=Monaco\ 9
 end
 colorscheme desert
 
@@ -239,7 +239,6 @@ let g:template{'_'}{'lorem'}  = g:template{'_'}{'lorem0'}
 let g:template{'vim'}{'fun'} = "function! ()\<CR>endfunction\<Up>\<End>\<Left>\<Left>"
 
 " rails - erb
-" fuck erb
 "let g:template{'_'}{'rr'}  = "<%  -%>\<Left>\<Left>\<Left>\<Left>"
 "let g:template{'_'}{'re'}  = "<%=  -%>\<Left>\<Left>\<Left>\<Left>"
 "let g:template{'_'}{'rrr'} = "<%  %>\<Left>\<Left>\<Left>"
