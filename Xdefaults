@@ -1,0 +1,13 @@
+aterm*loginShell:true
+aterm*transparent:true
+aterm*shading:20
+aterm*background:Black
+aterm*foreground:#6DD939
+aterm*color12:#729FCF
+aterm*scrollBar:false
+aterm*scrollBar_right:true
+aterm*transpscrollbar:true
+aterm*saveLines:32767
+aterm*font:smoothansi
+aterm*boldFont:*-*-fixed-bold-r-normal--*-*-140-*-*-*-*-iso8859-1
+
