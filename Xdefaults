@@ -10,4 +10,3 @@ aterm*transpscrollbar:true
 aterm*saveLines:32767
 aterm*font:smoothansi
 aterm*boldFont:*-*-fixed-bold-r-normal--*-*-140-*-*-*-*-iso8859-1
-

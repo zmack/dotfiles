@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sudo ntpdate clock.redhat.com
