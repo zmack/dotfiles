@@ -1,6 +1,7 @@
 export PATH=~/.gems/bin:$PATH
 export PATH=~/bin:$PATH
 export PATH=~/bin/zmack:$PATH
+export PATH=~/.gem/ruby/1.8/bin:$PATH
 
 . ~/.bash_aliases
 . ~/.macprofile
