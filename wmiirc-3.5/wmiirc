@@ -35,7 +35,7 @@ wmiir write /tagrules <<!
 
 # Status Bar Info
 status() {
-	echo -n $(uptime | sed 's/.*://; s/,//g') '|' $(date)
+	echo -n 'Wifi: ' $(cat /proc/net/wireless | grep wlan0 | awk '{ print $3 }') '|' $(cat /proc/acpi/battery/BAT0/state | grep "remaining" | sed 's/^[^:]\+/Battery/g') '|' $(uptime | sed 's/.*://; s/,//g') '|' $(date)
 }
 
 # Event processing
