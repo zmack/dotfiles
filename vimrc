@@ -484,7 +484,7 @@ if has("macunix")
   call KeyMap('n',  'LM',   'F11',     ':call ToggleFullSCreen()<CR>')
 endif
 call KeyMap('nv', 'L',    'y',       '<ESC>:call Yaml_to_spec()<CR>')
-call KeyMap('n',  'L',    '`',       ':NERDTreeToggle<CR>')
+call KeyMap('n',  'L',    '`',       ':NERDTreeFind<CR>')
 "call KeyMap('in', 'L',    '/',       '<C-x>/')
 "inoremap <Leader>/ <C-x>/
 "ab // /

@@ -1,6 +1,4 @@
-#!/usr/bin/js
-
-load('/home/zmack/bin/fulljslint.js');
+load('/Users/zmack/bin/fulljslint.js');
  
 var body = arguments[0];
 

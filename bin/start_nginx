@@ -1,0 +1,1 @@
+sudo GEM_PATH=`echo $GEM_PATH` /opt/nginx/sbin/nginx

@@ -25,6 +25,6 @@ else
 end
 
 action = "ruby #{files} #{ARGV.join(" ")}"
-cmd = %(rstakeout.rb "#{action}" "lib/**/*.rb" "app/#{dir}**/*.rb" "test/factories/**/*.rb" "spec/**/*.rb" "test/#{dir}**/*.rb" #{moredirs} "slices/*/app/#{dir}**/*.rb")
+cmd = %(rstakeout.rb "#{action}" "**/*.rb" "app/#{dir}**/*.rb" "test/factories/**/*.rb" "spec/**/*.rb" "test/#{dir}**/*.rb" #{moredirs} "slices/*/app/#{dir}**/*.rb")
 
 system(cmd)

@@ -1,6 +1,7 @@
 # bash
 alias reload="source ~/.profile"
 alias rc='vim ~/.profile && source ~/.profile'
+alias ls='ls -G'
 
 # git svn
 alias gs="git svn"
@@ -19,6 +20,7 @@ alias gdc="git diff --cached"
 alias g-update-deleted="git ls-files -z --deleted | git update-index -z --remove --stdin"
 #alias gstt="git ls-files --exclude-per-directory=.gitignore --exclude-from=.git/info/exclude --others --modified -t"
 alias gfr="git fetch && git rebase refs/remotes/origin/master"
+alias mozilla="curl --user-agent 'Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1.4) Gecko/20091016 Firefox/3.5.4'"
 
 alias gb="git branch"
 alias gba="git branch -a -v"
