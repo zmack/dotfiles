@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+DIR=$1
+FILENAME=$2
+if [ $# -ne 2 ]
+then
+  echo "CUAE ERONEZI !!\nUsage: $0 <filename> <folder>"
+  exit
+fi
+
+exec zip -9 -r $FILENAME $DIR -x "*.svn/*"
