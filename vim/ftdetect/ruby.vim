@@ -1,5 +1,5 @@
 " Ruby
-au BufNewFile,BufRead *.rb,*.rbw,*.rjs,*.rxml,*.gem,*.gemspec	set filetype=ruby
+au BufNewFile,BufRead *.rb,*.ru,*.rbw,*.rjs,*.rxml,*.gem,*.gemspec	set filetype=ruby
 
 " Rakefile
 au BufNewFile,BufRead [rR]akefile*				set filetype=ruby

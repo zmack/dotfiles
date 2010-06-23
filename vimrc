@@ -35,6 +35,7 @@ if has("gui_macvim")
 endif
 
 """""""""" general
+set expandtab
 set nocompatible              " use VI incompatible features
 set cpoptions+=I              " keep autoindent - doesn't seem to work tho
 set autoread                  " read outside modified files
