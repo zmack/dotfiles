@@ -8,8 +8,8 @@ export PATH=~/.gem/ruby/1.8/bin:$PATH
 if [ -f ~/.rvm/scripts/rvm ] ; then source ~/.rvm/scripts/rvm ; fi
 if [ -f ~/.rvm/current ] ; then source ~/.rvm/current ; fi
 
-. ~/.bash_aliases
-. ~/.macprofile
+if [ -f ~/.bash_aliases ] ; then source ~/.bash_aliases ; fi
+if [ -f ~/.macprofile ] ; then source ~/.macprofile ; fi
 
 # don't use gems as root
 #alias gemi='gem install --no-rdoc --no-ri -y'
