@@ -16,6 +16,7 @@ endif
 " make ~/.vim work on windows and ~/vimfiles on *nix
 set runtimepath=$HOME/.vim,$HOME/vimfiles,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after,$HOME/vimfiles/after
 set directory=$HOME/tmp/vim,$HOME/tmp,/var/tmp,/tmp,c:\\windows\\temp,$TMP,$TEMP
+call pathogen#runtime_append_all_bundles()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""" INCLUDES
