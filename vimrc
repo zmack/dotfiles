@@ -102,7 +102,7 @@ endif
 if has("unix")
   set guifont=Monaco\ 9
 end
-colorscheme evening
+colorscheme wombat
 
 """""""""" windows, tab pages, buffers
 set statusline=%-2(%M\ %)%5l,%-5v%<%f\ %m\ \ %{hostname()}:%r%{CwdShort()}%=%(%-5([%R%H%W]\ %)\ %10([%Y]%{ShowFileFormatFlag(&fileformat)}\ %)\ %L\ lines%)
