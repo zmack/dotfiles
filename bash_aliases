@@ -40,3 +40,6 @@ alias ms="mongrel_rails start"
 alias mig="rake db:migrate"
 alias migt="rake db:migrate RAILS_ENV=test"
 
+# gems
+alias gg="cd \`rvm gemdir\`"
+
