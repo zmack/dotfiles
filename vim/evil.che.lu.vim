@@ -17,12 +17,6 @@ function! CHELU_spaces()
   call CHELU_tabsize(2)
 endfunction
 
-function! CHELU_tabs()
-  set noexpandtab
-  call CHELU_indenting()
-  call CHELU_tabsize(4)
-endfunction
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""" event handlers
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
