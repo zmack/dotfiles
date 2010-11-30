@@ -47,6 +47,7 @@ set viminfo=%,h,'1000,"1000,:1000,n~/.viminfo
 set writebackup
 set writeany                  " write on readonly files
 set modelines=0               " disable modelines
+set nofoldenable
 
 """""""""" searches
 set gdefault                  " global search/replace by default
