@@ -3,6 +3,7 @@
 export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/bin:$PATH
 export PATH=/usr/local/git/bin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
 
 export MANPATH=~/man:/usr/local/git/man:$MANPATH
 
