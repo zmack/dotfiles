@@ -25,3 +25,6 @@
 [submodule "vim/bundle/vim-ruby-runner"]
 	path = vim/bundle/vim-ruby-runner
 	url = https://github.com/henrik/vim-ruby-runner.git
+[submodule "vim/bundle/vim-coffee-script"]
+	path = vim/bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
