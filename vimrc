@@ -17,6 +17,7 @@ endif
 set runtimepath=$HOME/.vim,$HOME/vimfiles,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after,$HOME/vimfiles/after
 set directory=$HOME/tmp/vim,$HOME/tmp,/var/tmp,/tmp,c:\\windows\\temp,$TMP,$TEMP
 call pathogen#runtime_append_all_bundles()
+set t_Co=256
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""" INCLUDES
@@ -102,7 +103,12 @@ endif
 if has("unix")
   set guifont=Monaco\ 9
 end
-colorscheme wombat
+
+if has("gui")
+  colorscheme wombat
+else
+  colorscheme solarized
+endif
 
 """""""""" windows, tab pages, buffers
 set statusline=%-2(%M\ %)%5l,%-5v%<%f\ %m\ \ %{hostname()}:%r%{CwdShort()}%=%(%-5([%R%H%W]\ %)\ %10([%Y]%{ShowFileFormatFlag(&fileformat)}\ %)\ %L\ lines%)
@@ -406,9 +412,6 @@ call KeyMap('ni', '',     '<F2>',    ':let @/ = ""\|nohlsearch<CR>')
 call KeyMap('ni', 'L',    'a',       ':set wrap!<CR>')
 call KeyMap('ni', 'L',    'l',       ':set list!<CR>')
 call KeyMap('ni', 'L',    'p',       ':set paste!<CR>')
-
-"""""""""" undo/redo
-call KeyMap('ni', 'CD',   'z',       'u')
 
 """""""""" indenting
 "call KeyMap('n',  '',     '<Tab>',   '>>')
