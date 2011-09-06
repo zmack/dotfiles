@@ -1,7 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =5
-let g:netrw_dirhist_1='/Users/zmack/work/symbolya/public/stylesheets/sass/admin'
-let g:netrw_dirhist_2='/Users/zmack/work/symbolya/app/controllers/admin'
-let g:netrw_dirhist_3='/Users/zmack/work/symbolya/vendor/plugins/paperclip'
-let g:netrw_dirhist_4='/Users/zmack/work/symbolya/vendor/plugins/paperclip/lib'
-let g:netrw_dirhist_5='/Users/zmack/work/symbolya/vendor/plugins/paperclip/lib/paperclip'
