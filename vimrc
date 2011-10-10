@@ -483,12 +483,6 @@ call KeyMap('n',  'L',    'c',       ':%s/^/#/<CR>')
 call KeyMap('v',  'L',    'c',       ':s/^/#/<CR>')
 call KeyMap('n',  'L',    'C',       ':%s/^\s*#//<CR>')
 call KeyMap('v',  'L',    'C',       ':s/^\s*#//<CR>')
-
-if has("macunix")
-  call KeyMap('n',  'DLM',  'k',       ':call GuiSizeNext()<CR>')
-  call KeyMap('n',  'DLM',  'K',       ':call GuiSizePrev()<CR>')
-  call KeyMap('n',  'LM',   'F11',     ':call ToggleFullSCreen()<CR>')
-endif
 call KeyMap('nv', 'L',    'y',       '<ESC>:call Yaml_to_spec()<CR>')
 call KeyMap('n',  'L',    '`',       ':NERDTreeFind<CR>')
 "call KeyMap('in', 'L',    '/',       '<C-x>/')
