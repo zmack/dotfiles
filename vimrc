@@ -167,6 +167,8 @@ call CHELU_spaces()
 "let g:Tb_ModSelTarget = 1
 
 
+let g:CommandTMaxFiles = 25000
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""" NERDCommenter
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -348,13 +350,13 @@ imap  <4-MiddleMouse>  <Nop>
 """""""""" copy/paste - mostly stolen from mswin.vim
 vnoremap <BS> d
 
-vnoremap <C-X> "+x
+vnoremap <D-x> "+x
 vnoremap <S-Del> "+x
 
-vnoremap <C-C> "+y
+vnoremap <D-c> "+y
 vnoremap <C-Insert> "+y
 
-map <C-V> "+gP
+map <D-v> "+gP
 map <S-Insert> "+gP
 "cmap <C-V> <C-R>+
 "cmap <S-Insert> <C-R>+
@@ -368,9 +370,6 @@ exe 'vnoremap <script> <C-V>' paste#paste_cmd['v']
 
 "imap <S-Insert>		<C-V>
 "vmap <S-Insert>		<C-V>
-
-" Use CTRL-Q to do what CTRL-V used to do
-noremap <C-Q>		<C-V>
 
 " For CTRL-V to work autoselect must be off.
 " On Unix we have two selections, autoselect can be used.
@@ -389,7 +388,6 @@ call KeyMap('ni', 'DLM',  '6',       '6gt')
 call KeyMap('ni', 'DLM',  '7',       '7gt')
 call KeyMap('ni', 'DLM',  '8',       '8gt')
 call KeyMap('ni', 'DLM',  '9',       '9gt')
-call KeyMap('ni', 'DLM',  't',       ':tabnew<CR>:tabmove<CR>')
 call KeyMap('ni', 'DLM',  ']',       'gt')
 call KeyMap('ni', 'DLM',  '[',       'gT')
 call KeyMap('ni', 'DLM',  '<Left>',  'gT')
@@ -402,7 +400,6 @@ call KeyMap('ni', 'D',    '<M-Right>', ':call MoveTabRight()<CR>')
 """""""""" buffers and files
 call KeyMap('ni', 'DLM',  's',       ':up<CR>')
 call KeyMap('ni', 'DLM',  'w',       ':bw<CR>')
-call KeyMap('ni', 'L',    'b',       ':tab ball<CR>')
 
 """""""""" selections
 call KeyMap('n',  'DM',  'a' ,      'ggVG')
