@@ -28,15 +28,12 @@
 [submodule "vim/bundle/vim-coffee-script"]
 	path = vim/bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
-[submodule "vim/bundle/vim-scala"]
-	path = vim/bundle/vim-scala
-	url = https://github.com/ewiplayer/vim-scala.git
-[submodule "vim/bundle/vim-scala-support"]
-	path = vim/bundle/vim-scala-support
-	url = https://github.com/rosstimson/scala-vim-support.git
 [submodule "vim/bundle/vim-ruby"]
 	path = vim/bundle/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby.git
 [submodule "vim/bundle/commandt"]
 	path = vim/bundle/commandt
 	url = https://github.com/wincent/Command-T.git
+[submodule "vim/bundle/vim-endwise"]
+	path = vim/bundle/vim-endwise
+	url = https://github.com/tpope/vim-endwise.git
