@@ -132,7 +132,8 @@ set title
 """""""""" editing
 set ffs=unix,dos,mac          " prefer unix line endings
 syntax enable
-"filetype plugin indent on
+
+filetype indent on
 filetype plugin on
 
 """""""""" netrw
