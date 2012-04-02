@@ -49,6 +49,7 @@ set writebackup
 set writeany                  " write on readonly files
 set modelines=0               " disable modelines
 set nofoldenable
+set tags=.git/tags,./tags,tags
 
 """""""""" searches
 set gdefault                  " global search/replace by default
@@ -105,7 +106,7 @@ if has("unix")
 end
 
 if has("gui")
-  colorscheme wombat
+  colorscheme zenburn
 else
   colorscheme solarized
 endif
