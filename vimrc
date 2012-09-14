@@ -105,7 +105,7 @@ if has("unix")
   set guifont=Monaco\ 9
 end
 
-if has("gui")
+if has("gui_running")
   colorscheme zenburn
 else
   colorscheme solarized
