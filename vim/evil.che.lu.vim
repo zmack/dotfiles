@@ -22,8 +22,8 @@ endfunction
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:CURRENTSIZE = 1
 let g:SIZES = []
-call add(g:SIZES, { "columns": 179, "columnsfs": 180, "lines":47, "linesfs": 49, "guifont":"Monaco:h11" })
-call add(g:SIZES, { "columns": 156, "columnsfs": 158, "lines":41, "linesfs": 43, "guifont":"Monaco:h12" })
+call add(g:SIZES, { "columns": 179, "columnsfs": 180, "lines":47, "linesfs": 49, "guifont":"Monaco:h10" })
+call add(g:SIZES, { "columns": 156, "columnsfs": 158, "lines":41, "linesfs": 43, "guifont":"Monaco:h10" })
 call add(g:SIZES, { "columns": 114, "columnsfs": 115, "lines":28, "linesfs": 29, "guifont":"Monaco:h18" })
 
 function! GuiSizeSet(size)

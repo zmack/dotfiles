@@ -100,6 +100,7 @@ if has("win32")
 endif
 if has("macunix")
   set antialias
+  set guifont=Monaco:h10
 endif
 if has("unix")
   set guifont=Monaco\ 9
@@ -108,6 +109,7 @@ end
 if has("gui_running")
   colorscheme zenburn
 else
+  set background=light
   colorscheme solarized
 endif
 
