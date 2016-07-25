@@ -18,6 +18,7 @@ set runtimepath=$HOME/.vim,$HOME/vimfiles,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfile
 set directory=$HOME/tmp/vim,$HOME/tmp,/var/tmp,/tmp,c:\\windows\\temp,$TMP,$TEMP
 call pathogen#runtime_append_all_bundles()
 set t_Co=256
+let g:airline_powerline_fonts = 1
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """""""""" INCLUDES
@@ -72,7 +73,7 @@ set iskeyword=@,48-57,128-167,224-235,_
 set listchars=tab:>.,trail:.,extends:>,precedes:<,eol:$
 
 """""""""" visual
-set guioptions=ceimMgr        " aA BAD? WHY THE FUCK ARE YOU SETTING b !?! =[
+set guioptions=cimMg          " aA BAD? WHY THE FUCK ARE YOU SETTING b !?! =[
 set number                    " show line numbers
 set laststatus=2              " always show status line
 set scrolloff=2               " minlines to show around cursor
@@ -98,24 +99,27 @@ set wildmode=list:longest,full
 if has("win32")
   set guifont=DejaVu_Sans_Mono:h10
 endif
+
 if has("macunix")
-  set antialias
-  set guifont=Monaco:h10
+  " set antialias
+  set guifont=InputMono:h10
+else
+  if has("unix")
+    set guifont=Monaco\ 9
+  end
 endif
-if has("unix")
-  set guifont=Monaco\ 9
-end
 
 if has("gui_running")
+  set guifont=InputMono:h10
   colorscheme zenburn
 else
-  set background=light
-  colorscheme solarized
+  set background=dark
+  colorscheme wombat256mod
 endif
 
 """""""""" windows, tab pages, buffers
-set statusline=%-2(%M\ %)%5l,%-5v%<%f\ %m\ \ %{hostname()}:%r%{CwdShort()}%=%(%-5([%R%H%W]\ %)\ %10([%Y]%{ShowFileFormatFlag(&fileformat)}\ %)\ %L\ lines%)
-set showtabline=2
+" set statusline=%-2(%M\ %)%5l,%-5v%<%f\ %m\ \ %{hostname()}:%r%{CwdShort()}%=%(%-5([%R%H%W]\ %)\ %10([%Y]%{ShowFileFormatFlag(&fileformat)}\ %)\ %L\ lines%)
+" set showtabline=2
 
 " see help for these functions
 "set tabline=%!MyTabLine()
@@ -271,48 +275,6 @@ let g:template{'ruby'}{'rbe'} = "before(:each) do\n  \n\<BS>end\n\<Up>\<Up>" . r
 let g:template{'ruby'}{'rbea'} = "before do\n  \n\<BS>end\n\<Up>\<Up>" . repeat("\<RIGHT>", 2)
 let g:template{'ruby'}{'rhe'} = "module SpecHelper\<CR>  def valid_attributes\<CR>  {\<CR>  : => '',\<CR>\<BS>}\<CR>\<BS>end\<CR>\<BS>end\<CR>" . repeat("\<UP>", 7) . repeat("\<RIGHT>", 7)
 
-" css
-let g:template{'css'}{'cl'}  = ". {\<CR>  \<CR>\<BS>}\<UP>\<UP>"
-let g:template{'css'}{'id'}  = "# {\<CR>  \<CR>\<BS>}\<UP>\<UP>"
-let g:template{'css'}{'ta'}  = " {\<CR> \<CR>\<BS>}\<UP>\<UP>\<Left>"
-let g:template{'css'}{'fl'}  = "float: left;\<CR>display: inline;\<CR>"
-let g:template{'css'}{'fr'}  = "float: right;\<CR>display: inline;\<CR>"
-let g:template{'css'}{'bg'}  = "background: url(../images/.gif) left top no-repeat;" . repeat("\<Left>", 25)
-let g:template{'css'}{'bn'}  = "background: none;"
-let g:template{'css'}{'bgc'} = "background-color: #;\<Left>"
-let g:template{'css'}{'bo'}  = "border: solid 1px #;\<Left>"
-let g:template{'css'}{'c'}   = "color: #;\<Left>"
-let g:template{'css'}{'fs'}  = "font-size: em;\<Left>\<Left>\<Left>"
-let g:template{'css'}{'fb'}  = "font-weight: bold;"
-let g:template{'css'}{'fn'}  = "font-weight: normal;"
-let g:template{'css'}{'di'}  = "display: inline;"
-let g:template{'css'}{'db'}  = "display: block;"
-let g:template{'css'}{'dn'}  = "display: none;"
-let g:template{'css'}{'pa'}  = "position: absolute;"
-let g:template{'css'}{'pr'}  = "position: relative;"
-let g:template{'css'}{'tu'}  = "text-decoration: underline;"
-let g:template{'css'}{'tn'}  = "text-decoration: none;"
-let g:template{'css'}{'vm'}  = "vertical-align: middle;"
-
-" sass
-let g:template{'sass'}{'fl'}  = "float: left\<CR>display: inline\<CR>"
-let g:template{'sass'}{'fr'}  = "float: right\<CR>display: inline\<CR>"
-let g:template{'sass'}{'bg'}  = "background: url(../images/.gif) left top no-repeat" . repeat("\<Left>", 24)
-let g:template{'sass'}{'bn'}  = "background: none"
-let g:template{'sass'}{'bgc'} = "background-color: #"
-let g:template{'sass'}{'bo'}  = "border: solid 1px #"
-let g:template{'sass'}{'c'}   = "color: #"
-let g:template{'sass'}{'fs'}  = "font-size: em\<Left>\<Left>"
-let g:template{'sass'}{'fb'}  = "font-weight: bold"
-let g:template{'sass'}{'fn'}  = "font-weight: normal"
-let g:template{'sass'}{'di'}  = "display: inline"
-let g:template{'sass'}{'db'}  = "display: block"
-let g:template{'sass'}{'dn'}  = "display: none"
-let g:template{'sass'}{'pa'}  = "position: absolute"
-let g:template{'sass'}{'pr'}  = "position: relative"
-let g:template{'sass'}{'tu'}  = "text-decoration: underline"
-let g:template{'sass'}{'tn'}  = "text-decoration: none"
-let g:template{'sass'}{'vm'}  = "vertical-align: middle"
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

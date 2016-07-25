@@ -43,6 +43,8 @@ ZSH_THEME="goat-candy"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+source ~/projects/gogo/gogo.plugin.zsh
+source ~/.private/statuspage.io
 
 bindkey -v
 bindkey "^R" history-incremental-search-backward
@@ -79,19 +81,37 @@ alias gba="git branch -a -v"
 alias gci="git commit"
 alias gco="git checkout"
 
-alias gg="cd $GEM_HOME"
+alias gg="cd \$GEM_HOME"
+
+alias kc="kubectl"
+alias kcp="kc --context=production"
+
+# Leeeeewh
+function le() {
+  if (( $# == 0 )); then
+    ls -alht | head
+  else
+    ls -alht | head -n $1
+  fi
+}
 
 source /usr/local/share/chruby/chruby.sh
 source /Users/zmack/perl5/perlbrew/etc/bashrc
 
-export AWS_ELB_HOME="/Users/zmack/projects/elb"
-export AWS_CREDENTIAL_FILE="/Users/zmack/projects/elb/credentials"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.7.0_65.jdk/Contents/Home/"
 # Customize to your needs...
 export GOPATH=/Users/zmack/projects/go
-export PATH=/Users/zmack/bin:$GOPATH/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/Users/zmack/projects/elb/bin:/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Commands
+export PATH=/Users/zmack/bin:$GOPATH/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Commands
 export EDITOR=/usr/local/bin/vim
-chruby 1.9.3
+export XDG_CONFIG_HOME=/Users/zmack/projects/
+export DISABLE_SPRING=true
+chruby 2.2.0
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# The next line updates PATH for the Google Cloud SDK.
+source '/Users/zmack/google-cloud-sdk/path.zsh.inc'
+
+# The next line enables shell command completion for gcloud.
+source '/Users/zmack/google-cloud-sdk/completion.zsh.inc'
